@@ -1,0 +1,212 @@
+@media only screen and (min-width:68.1em) {
+  body{
+    overflow: auto !important;
+  }
+  .carou-list .carousel-list img{
+    width: 100%;
+    object-fit: cover;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width:68.1em) {
+  .load {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .rating-site:last-child {
+    margin-right: 0;
+  }
+  .rating-site{
+      margin-right: 2rem;
+  }
+  nav .nav_btn{
+    display: block;
+    z-index: 1000;
+    position: relative;
+    font-size: 3rem;
+  }
+  nav .nav_btn i.active::before {
+    content: '\f00d';
+  }
+  nav .nav_btn i.active::before.active {
+    content: "\f0c9";
+  }
+  .nav_bar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding: 1.5rem 3rem;
+    width: 35%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    transition: all .4s ease;
+  }
+  .nav_bar.active{
+    left: 0;
+  }
+  .nav_bar .logo{
+   display: block;
+   margin-bottom: 2rem;
+  }
+  .nav_bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: 100%;
+    height: 50%;
+  }
+  .nav_bar ul li{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .nav_bar ul li a{
+    padding: 0;
+    width: 100%;
+  }
+  .nav_bar .search{
+   margin: 0;
+   margin-bottom: 1.5rem;
+   width: 100%;
+  }
+  .nav_bar .search input{
+   width: 100%;
+  }
+  .nav_bar .search .searched{
+    display: none;
+  }
+  .carou-list .carousel-list img{
+    width: auto;
+    object-fit: cover;
+    height: 24rem;
+  }
+  .carou-list .carousel-list img{
+    width: 17rem;
+  }
+  .stream_info .stream_image{
+    margin-right: 0;
+  }
+  .stream_video .stream_video_list ul{
+    max-height: 200px;
+  }
+  /* //footer */
+  footer ul {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width:55.31em){
+  .stream_video .stream_video_list ul{
+    max-height: 170px;
+  }
+  .stream_video .stream_video_list .title{
+    margin-bottom: .3rem;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width:49em){
+  .stream_video{
+    flex-direction: column;
+    margin: 0;
+  }
+  .stream_video .stream_video_list{
+    border-radius: 16px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .stream_video .stream_video_list ul{
+    flex-direction: row;
+  }
+  .stream_video .stream_video_list ul::-webkit-scrollbar{
+    height: 3px;
+  }
+  .stream_video .stream_video_list ul li{
+    margin: .5rem;
+  }
+  .stream_video .stream_video_list ul li a{
+    padding: .3rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px rgba(255, 255, 255, .2);
+  }
+  .stream_video .video_stream{
+    margin: 0;
+  }
+}
+@media only screen and (max-width:49em) {
+  .nav_bar{
+    width: 45%;
+  }
+  .load{
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+  .rating-site{
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+  }
+  .rating-site h5{
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width:41em) {
+  .nav_bar{
+    width: 55%;
+  }
+  .head .max-width{
+    padding: 10rem 2rem 0 2rem;
+  }
+  .head .content .content_info{
+    display: none;
+  }
+  .head .content{
+    background: none;
+  }
+  .head .content:hover{
+    background: none;
+  }
+  .head .content img{
+    box-shadow: 2px 3px 13px rgb(255,255,255,.1);
+  }
+  .head .owl-nav{
+    display: none !important;
+  }
+  /* //footer */
+  footer .social span{
+    display: none;
+  }
+  footer .social{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.3rem;
+  }
+  .footer{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width:37em) {
+  .nav_bar{
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .nav_bar .search{
+    width: 90%;
+  }
+  .carou-list .carousel-list img{
+    width: 17rem;
+  }
+  .load .load__link i{
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width:26em) {
+  .load__link{
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+  }
+  .rating{
+    margin: 0 auto;
+  }
+}

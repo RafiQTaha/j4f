@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!-- <html lang="ar" dir="rtl"> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/j4f.jpg" type="image/gif" sizes="16x16">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stream.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Just For Filmmers</title>
+</head>
+<body>
+                    <!-- NAVIGATION START -->
+                                <nav>
+                                  <div class="max-width">
+                                    <a href="./" class="navbar-brand"><span>J4F</span>ilmmers</a>
+                                    <div class="nav_bar">
+                                      <a href="./" class="logo navbar-brand"><span>J4F</span>ilmmers</a>
+                                      <ul>
+                                        <li class="nav-item"><a href="" class="nav-link">Movie</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">TvShows</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">Anime</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">My List</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+                                      </ul>
+                                      <form class="d-flex search">
+                                        <input type="text" name="" value="" class="search" placeholder="Search">
+                                        <!-- <ul class="searched">
+                                          <li class="searched-list">
+                                            <a href="#">
+                                              <img src="img/larg-joker.jpg" alt="">
+                                              <div class="search_info">
+                                                <div class="title">Joker</div>
+                                                <div class="genre">Movie</div>
+                                              </div>
+                                            </a>
+                                          </li>
+                                        </ul> -->
+                                        <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                      </form>
+                                      <div class="d-flex">
+                                        <a href="#" class="btn btn-in" data-target="#signin-modal" data-toggle="modal"> Sign In </a>
+                                        <a href="#" class="btn btn-up" data-target="#signup-modal" data-toggle="modal"> Sign Up </a>
+                                      </div>
+                                    </div>
+                                    <button class="nav_btn"><i class="fas fa-bars"></i></button>
+                                  </div>
+                                </nav>
+                      <!-- NAVIGATION END -->
+                    <!-- COURASEL START -->
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <picture>
+                                <source media="(min-width:592px)" srcset="img/soul.jpg">
+                                  <img src="img/soul.jpg" class="d-block w-100" alt="3">
+                          </picture>
+                          <div class="carousel-caption desc">
+                                <h4>Movie</h4>
+                                <h1>Soul 2020 </h1>
+                                <p class="history">
+                                  The story follows a middle school music teacher named Joe Gardner,
+                                  who seeks to reunite his soul and his body after they are accidentally separated,
+                                  just before his big break as a jazz musician.
+                                  Soul is the first Pixar film to feature an African-American protagonist.
+                                </p>
+                                <div class="play container-fluid">
+                                  <!-- <a href="#" class="play_watch btn btn-primary" data-target="#movie1-modal" data-toggle="modal"> -->
+                                  <a href="stream.html" class="play_watch btn btn-primary">
+                                    <i class="fas fa-play-circle"></i>
+                                     Watch Now</a>
+                                  <div class="play_trailer">
+                                    <a href="#" class="" data-target="#trailer1-modal" data-toggle="modal">
+                                      <i class="fas fa-film"></i>
+                                       Trailer
+                                     </a>
+                                     <button class="favorite"><i class="fas fa-star"></i>
+                                     Favorite</button>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <picture>
+                                <source media="(min-width:592px)" srcset="img/larg-joker.jpg">
+                                  <img src="img/larg-joker.jpg" class="d-block w-100" alt="3">
+                          </picture>
+                          <div class="carousel-caption desc">
+                                <h4>Movie</h4>
+                                <h1>Joker 2019</h1>
+                                <p class="history">
+                                  Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.
+                                  Arthur wears two masks -- the one he paints for his day job as a clown,
+                                  and the guise he projects in a futile attempt to feel like he's part of the world around him.
+                                  Isolated, bullied and disregarded by society,
+                                  Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.
+                                </p>
+                                <div class="play container-fluid">
+                                  <!-- <a href="#" class="play_watch btn btn-primary" data-target="#movie1-modal" data-toggle="modal"> -->
+                                  <a href="stream.html" class="play_watch btn btn-primary">
+                                    <i class="fas fa-play-circle"></i>
+                                     Watch Now</a>
+                                     <div class="play_trailer">
+                                       <a href="#" class="" data-target="#trailer1-modal" data-toggle="modal">
+                                         <i class="fas fa-film"></i>
+                                          Trailer
+                                        </a>
+                                        <button class="favorite"><i class="fas fa-star"></i>
+                                        Favorite</button>
+                                     </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <!-- COURASEL END -->
+                    <!-- COURASEL ITEMS STAR -->
+                  <main>
+                    <section class="newest max-width" id="newest">
+                    <div class="container-fluid">
+                      <h1 class="title__row">Newest</h1>
+                    </div>
+
+                    <!-- Flickity HTML init -->
+                    <div class="carousel posts" data-flickity='{ "groupCells": true }'>
+                      <div class='carousel-cell post__list'>
+                          <a href='#' class='post_link'>
+                             <!-- <img src='img/larg-bad.jpg' alt='' class='post__img'> -->
+                             <picture>
+                                   <source media="(min-width:556px)" srcset="img/larg-bad.jpg">
+                                     <img src="img/phone-bad.jpg" class="post__img" alt="3">
+                             </picture>
+                             <div class='post__genre'>
+                               <div class='post__genre-child'><span>Drama</span></div>
+                               <div class='post__genre-child'><span>Action</span></div>
+                             </div>
+                               <i class='post__play far fa-play-circle'></i>
+                             <div class='post__disc'>
+                               <p>Breaking Bad 2013</p>
+                             </div>
+                         </a>
+                        </div>
+
+                    </div>
+                  </section>
+
+
+
+                  <section class="popular max-width">
+                    <div class="container-fluid">
+                      <h1 class="title__row">Popular</h1>
+                    </div>
+
+                    <!-- Flickity HTML init -->
+                    <div class="carousel posts" data-flickity='{ "groupCells": true }'>
+
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-joker.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-joker.jpg">
+                                   <img src="img/phone-joker.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Joker 2019</p>
+                           </div>
+                       </a>
+                      </div>
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-fury.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-fury.jpg">
+                                   <img src="img/larg-fury.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Guerre</span></div>
+                             <div class="post__genre-child"><span>Action</span></div>
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Fury 2013</p>
+                           </div>
+                       </a>
+                      </div>
+
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-joker.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-joker.jpg">
+                                   <img src="img/phone-joker.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Joker 2019</p>
+                           </div>
+                       </a>
+                      </div>
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-fury.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-fury.jpg">
+                                   <img src="img/larg-fury.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Guerre</span></div>
+                             <div class="post__genre-child"><span>Action</span></div>
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Fury 2013</p>
+                           </div>
+                       </a>
+                      </div>
+
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-joker.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-joker.jpg">
+                                   <img src="img/phone-joker.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Joker 2019</p>
+                           </div>
+                       </a>
+                      </div>
+                      <div class="carousel-cell post__list">
+                        <a href="#" class="post_link">
+                           <!-- <img src="img/larg-fury.jpg" alt="" class="post__img"> -->
+                           <picture>
+                                 <source media="(min-width:556px)" srcset="img/larg-fury.jpg">
+                                   <img src="img/larg-fury.jpg" class="post__img" alt="3">
+                           </picture>
+                           <div class="post__genre">
+                             <div class="post__genre-child"><span>Guerre</span></div>
+                             <div class="post__genre-child"><span>Action</span></div>
+                             <div class="post__genre-child"><span>Drama</span></div>
+                           </div>
+                             <i class="post__play far fa-play-circle"></i>
+                           <div class="post__disc">
+                             <p>Fury 2013</p>
+                           </div>
+                       </a>
+                      </div>
+
+                    </div>
+                    </section>
+                    <!-- PAGINATION START -->
+                    <div aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item ">
+                         <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+                        </li>
+                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item "><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                         <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </div>
+                  <!-- PAGINATION END -->
+                  </main>
+
+                    <!-- COURASEL ITEMS END -->
+                    <!-- MODALS START  -->
+
+                    <!-- TRAILER MODAL 1 START -->
+                    <div class="modal fade" id="trailer1-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <iframe width="420" height="315" allowfullscreen="allowfullscreen"
+                                  src="https://www.youtube.com/embed/xOsLIiBStEs?autoplay=0">
+                              </iframe>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TRAILER MODAL 1 END -->
+                    <!-- TRAILER MODAL 2 START -->
+                    <div class="modal fade" id="trailer3-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <iframe width="420" height="315" allowfullscreen="allowfullscreen"
+                                  src="https://www.youtube.com/embed/eUyqvQF7-Hs?autoplay=0">
+                              </iframe>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TRAILER MODAL 2 END -->
+                    <!-- TRAILER MODAL 3 START -->
+                    <div class="modal fade" id="trailer2-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <iframe width="420" height="315" allowfullscreen="allowfullscreen"
+                                  src="https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=0">
+                              </iframe>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TRAILER MODAL 3 END -->
+
+                        <!-- SIGN IN FORM START -->
+
+                    <div class="modal fade" id="signin-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content signin-content">
+                            <div class="modal-header signin-header">
+                                  <h3 class="modal-title">Connection</h3>
+                                  <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body signin-body">
+                                  <form class="container-fluid" novalidate="">
+                                          <div class="form-group">
+                                                  <label class="form-control-label" for="i1">Login</label>
+                                                  <input type="text" class="form-control" name="i1" id="i1">
+                                          </div>
+                                          <div class="form-group">
+                                                  <label class="form-control-label" for="i2">Password</label>
+                                                  <input type="password" class="form-control" name="i2" required="" id="i2">
+                                          </div>
+                                          <div class="">
+                                                  <button type="submit" class="btn btn-primary btn-sign">Sign In</button>
+                                          </div>
+                                  </form>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- SIGN IN MODAL END -->
+                    <!-- SIGN UP MODAL START -->
+
+                    <div class="modal fade" id="signup-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content signin-content">
+
+                            <div class="modal-header signin-header">
+                              <h3 class="modal-title">Register</h3>
+                              <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body signin-body">
+                                <form class="container-fluid" novalidate="">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="FullName">FullName</label>
+                                        <input type="text" class="form-control" name="fullname" id="FullName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="UserName">UserName</label>
+                                        <input type="text" class="form-control" name="username" id="UserName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="Email">Email</label>
+                                        <input type="Email" class="form-control" name="email" id="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="Password">Password</label>
+                                        <input type="password" class="form-control" name="password" required="" id="Password">
+                                    </div>
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary btn-sign">Sign Up</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- SIGN UP MODAL END -->
+                    <!-- MOVIE MODAL START -->
+                    <!-- MOVIE MODAL 1 START -->
+                    <div class="modal fade" id="movie1-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <video width="100%" height="100%" poster="img/soul.jpg" controls>
+                                <source src="movie/Soul2020.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- MOVIE MODAL 1 END -->
+                    <!-- MOVIE MODAL 2 START -->
+                    <div class="modal fade" id="movie2-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <!-- <video width="100%" height="100%" poster="img/larg-joker.jpg" controls>
+                                <source src="https://myvid.tv/embed-mf5cxwn95teh.html" type="video/mp4">
+                              </video> -->
+                              <iframe width="100%" height="100%" src="https://myvid.tv/embed-mf5cxwn95teh.html"
+                              scrolling="OFF" frameborder="0" allowfullscreen="" __idm_id__="852931585"></iframe>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- MOVIE MODAL 2 END -->
+
+                    <!-- MOVIE MODAL 3 START -->
+                    <div class="modal fade" id="movie3-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <video width="100%" height="100%" poster="img/ramo.jpg" controls>
+                                <source src="https://yeni-02.anavids.com/yh5cbboioxikjnl7527kr6d2vwgq5brj2dqy2xycolh3eas6jmthxz2uuika/v.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- MOVIE MODAL 3 END -->
+
+                    <!-- MOVIE MODAL 4 START -->
+                    <div class="modal fade" id="movie4-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content trailer-content">
+                            <div class="modal-body trailer-modal">
+                              <video width="100%" height="100%" poster="img/ramo.jpg" controls>
+                                <source src="https://s26.anavids.com/yh5cddryotikjnl75272r23r5dxaw4jwy344mjftziachyovc3rejxce57aa/v.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- MOVIE MODAL 4 END -->
+                    <!-- MOVIE MODAL END -->
+                    <!-- MODALS END  -->
+
+        <!-- FOOTER START -->
+        <footer class="footer">
+          <div class="footer-nav">
+            <ul>
+              <li> Top 5 Movies </li>
+              <li> <a href="#">12 Angry Men</a> </li>
+              <li> <a href="#">Shawshank Redemtion</a> </li>
+              <li> <a href="#">Amelie</a> </li>
+              <li> <a href="#">Fast 7</a> </li>
+              <li> <a href="#">Joker</a> </li>
+            </ul>
+            <ul>
+              <li> Top 5 Tv Shows </li>
+              <li> <a href="#">Breaking BAd</a> </li>
+              <li> <a href="#">Game Of Thrones</a> </li>
+              <li> <a href="#">Vikings</a> </li>
+              <li> <a href="#">Dark</a> </li>
+              <li> <a href="#">Better Call Saul</a> </li>
+            </ul>
+            <ul>
+              <li> MENU </li>
+              <li> <a href="#">HOME</a> </li>
+              <li> <a href="#">MOVIES</a> </li>
+              <li> <a href="#">TV SHOWS</a> </li>
+              <li> <a href="#">ANIMES</a> </li>
+              <li> <a href="#">MY LIST</a> </li>
+            </ul>
+            <ul>
+              <li> Contact </li>
+              <div class="social">
+                <li> <a href="#"><i class="fab fa-twitter-square"></i> <span>Twitter</span> </a> </li>
+                <li> <a href="#"><i class="fab fa-facebook-square"></i> <span>Facebook</span> </a> </li>
+                <li> <a href="#"><i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                <li> <a href="#"><i class="fab fa-telegram"></i> <span>Telegram</span> </a> </li>
+              </div>
+            </ul>
+          </div>
+          <p>Created By <span>RafiQ Taha</span>. All CopyRight &copy; Reserved.</p>
+
+        </footer>
+
+        <!-- FOOTER END -->
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.6.0.slim.min.js"></script>
+        <!-- Popper -->
+        <script src="js/popper.min.js"></script>
+        <!-- bootstrap.min.js -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/script.js" charset="utf-8"></script>
+      </body>
+</html>

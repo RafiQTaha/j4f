@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- <html lang="ar" dir="rtl"> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/j4f.jpg" type="image/gif" sizes="16x16">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stream.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>Just For Filmmers</title>
+</head>
+<body>
+        <!-- NAVIGATION START -->
+                    <nav>
+                      <div class="max-width">
+                        <div class="logo"><a href="./">Stream</a></div>
+                        <div class="nav_bar">
+                          <div class="logo"><a href="./">Stream</a></div>
+                          <ul>
+                            <li><a href="./">Movie</a></li>
+                            <li><a href="tvshows.html">TvShows</a></li>
+                            <li><a href="anime.html?cat_id=3">Anime</a></li>
+                            <li><a href="">My List</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">About Us</a></li>
+                          </ul>
+                          <div class="search">
+                            <input type="text" name="" placeholder="Search">
+                            <ul class="searched">
+
+                            </ul>
+                            <button type="submit" class="search_btn"><i class="fa fa-search"></i></button>
+                          </div>
+                          <div class="sign">
+                            <a href="#" class="signin" data-target="#signin-modal" data-toggle="modal">SignIn</a>
+                            <a href="#" class="signup" data-target="#signup-modal" data-toggle="modal">SignUp</a>
+                          </div>
+                        </div>
+                        <button class="nav_btn"><i class="fas fa-bars"></i></button>
+                      </div>
+                    </nav>
+          <!-- NAVIGATION END -->
+
+                    <div class="container-fluid">
+                      <div class="contact-form">
+                        <form method="post">
+                            <h1>Drop Us a Message</h1>
+                           <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 165px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- SIGN IN FORM START -->
+
+                <div class="modal fade" id="signin-modal" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content signin-content">
+                        <div class="modal-header signin-header">
+                              <h3 class="modal-title">Connection</h3>
+                              <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body signin-body">
+                              <form class="container-fluid" novalidate="" method="post" action="#">
+                                      <div class="form-group">
+                                              <label class="form-control-label" for="i1">Login</label>
+                                              <input type="text" class="form-control" name="i1" id="i1" placeholder=" Entre Your Login">
+                                      </div>
+                                      <div class="form-group">
+                                              <label class="form-control-label" for="i2">Password</label>
+                                              <input type="password" class="form-control" name="i2" required="" id="i2" placeholder=" Entre Your Password">
+                                      </div>
+                                      <div class="">
+                                              <button type="submit" class="btn btn-primary btn-sign">Sign In</button>
+                                      </div>
+                              </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SIGN IN MODAL END -->
+                <!-- SIGN UP MODAL START -->
+
+                <div class="modal fade" id="signup-modal" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content signin-content">
+
+                        <div class="modal-header signin-header">
+                          <h3 class="modal-title">Register</h3>
+                          <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body signin-body">
+                            <form class="container-fluid" novalidate="" method="post" action="#">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="FullName">FullName</label>
+                                    <input type="text" class="form-control" name="fullname" id="FullName" placeholder="Entre Your FullName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label" for="UserName">UserName</label>
+                                    <input type="text" class="form-control" name="username" id="UserName" placeholder="Entre Your UserName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label" for="Email">Email</label>
+                                    <input type="Email" class="form-control" name="email" id="Email" placeholder="Entre Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label" for="Password">Password</label>
+                                    <input type="password" class="form-control" name="password" required="" id="Password" placeholder="Entre Your Password">
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="btn btn-primary btn-sign">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SIGN UP MODAL END -->
+
+                  <!-- FOOTER START -->
+                    <footer class="footer">
+                      <div class="footer-nav">
+                        <ul>
+                          <li> Top 5 Movies </li>
+                          <li> <a href="#">12 Angry Men</a> </li>
+                          <li> <a href="#">Shawshank Redemtion</a> </li>
+                          <li> <a href="#">Amelie</a> </li>
+                          <li> <a href="#">Fast 7</a> </li>
+                          <li> <a href="#">Joker</a> </li>
+                        </ul>
+                        <ul>
+                          <li> Top 5 Tv Shows </li>
+                          <li> <a href="#">Breaking BAd</a> </li>
+                          <li> <a href="#">Game Of Thrones</a> </li>
+                          <li> <a href="#">Vikings</a> </li>
+                          <li> <a href="#">Dark</a> </li>
+                          <li> <a href="#">Better Call Saul</a> </li>
+                        </ul>
+                        <ul>
+                          <li> MENU </li>
+                          <li> <a href="#">HOME</a> </li>
+                          <li> <a href="#">MOVIES</a> </li>
+                          <li> <a href="#">TV SHOWS</a> </li>
+                          <li> <a href="#">ANIMES</a> </li>
+                          <li> <a href="#">MY LIST</a> </li>
+                        </ul>
+                        <ul>
+                          <li> Contact </li>
+                          <div class="social">
+                            <li> <a href="#"><i class="fab fa-twitter-square"></i> <span>Twitter</span> </a> </li>
+                            <li> <a href="#"><i class="fab fa-facebook-square"></i> <span>Facebook</span> </a> </li>
+                            <li> <a href="#"><i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                            <li> <a href="#"><i class="fab fa-telegram"></i> <span>Telegram</span> </a> </li>
+                          </div>
+                        </ul>
+                      </div>
+                      <p>Created By <span>RafiQ Taha</span>. All CopyRight &copy; Reserved.</p>
+                  <!-- FOOTER END -->
+
+            <!-- jQuery -->
+            <script src="js/jquery-3.6.0.slim.min.js"></script>
+            <!-- Popper -->
+            <script src="js/popper.min.js"></script>
+            <!-- bootstrap.min.js -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <script src="js/script.js" charset="utf-8"></script>
+      </body>
+</html>

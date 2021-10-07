@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Admin</title>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="navigation">
+        <div class="brand"> <span>J4F</span> ilmmers</div>
+          <div class="nav">
+            <li><a href="/"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="subsc.html" class="link"><i class="fas fa-user"></i> Subscribers</a></li>
+            <li><a href="msg.html" class="link"><i class="fas fa-comment"></i> Messages</a></li>
+            <li class="dropdown">
+              <a><i class="fas fa-film"></i> Movies <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="movies.html" class="link"><i class="fas fa-list"></i> All Movies</a>
+                <a href="movie.html" class="link"><i class="fas fa-plus"></i> Add Movie</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a ><i class="fas fa-tv"></i> Series <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="#" class="link"><i class="fas fa-list"></i> All Series</a>
+                <a href="#" class="link"><i class="fas fa-plus"></i> Add Serie</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a ><i class="fas fa-paw"></i> Animes <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="#" class="link"><i class="fas fa-list"></i> All Animes</a>
+                <a href="#" class="link"><i class="fas fa-plus"></i> Add Anime</a>
+              </div>
+            </li>
+            <li><a href="setting.html" class="link"><i class="fas fa-sliders-h"></i> Setting</a></li>
+            <li><a href="password.html" class="link"><i class="fas fa-lock"></i> Password</a></li>
+            <li><a href="logout.html" class="link"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+          </div>
+      </div>
+      <div class="container">
+        <div class="nav">
+          <button class='nav_btn'><i class="fas fa-bars"></i></button>
+          <a href="profile.html" class="profile">
+            <img src="https://i.ibb.co/6DzSr3z/profile2.jpg" alt="">
+          </a>
+        </div>
+        <div class="contente">
+          <div class="table_all">
+            <table id="example" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Date</th>
+                        <th>Statut</th>
+                        <th>Created At</th>
+                        <th>View</th>
+                        <th>Links</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td><a href="#">Movie 1</a></td>
+                        <td>Action</td>
+                        <td>12/12/2012</td>
+                        <td>
+                          <select class="select statut" name="serie">
+                            <option value="1">Public</option>
+                            <option value="1">Private</option>
+                            <option value="1">Subscriber</option>
+                          </select>
+                        </td>
+                        <td>12/08/2020</td>
+                        <td>2k</td>
+                        <td>Check</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><a href="#">Movie 2</a></td>
+                        <td>Drama/Action</td>
+                        <td>12/05/2021</td>
+                        <td>
+                          <select class="select statut" name="serie">
+                            <option value="1">Subscriber</option>
+                            <option value="1">Private</option>
+                            <option value="1">Public</option>
+                          </select>
+                        </td>
+                        <td>12/06/2021</td>
+                        <td>Check</td>
+                        <td>5k</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                      </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Admin</title>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="navigation">
+        <div class="brand"> <span>J4F</span> ilmmers</div>
+          <div class="nav">
+            <li><a href="/"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="subsc.html" class="link"><i class="fas fa-user"></i> Subscribers</a></li>
+            <li><a href="msg.html" class="link"><i class="fas fa-comment"></i> Messages</a></li>
+            <li class="dropdown">
+              <a><i class="fas fa-film"></i> Movies <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="movies.html" class="link"><i class="fas fa-list"></i> All Movies</a>
+                <a href="movie.html" class="link"><i class="fas fa-plus"></i> Add Movie</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a ><i class="fas fa-tv"></i> Series <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="#" class="link"><i class="fas fa-list"></i> All Series</a>
+                <a href="#" class="link"><i class="fas fa-plus"></i> Add Serie</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a ><i class="fas fa-paw"></i> Animes <span><i class="fas fa-chevron-right"></i></span></a>
+              <div class="dropdown-nav">
+                <a href="#" class="link"><i class="fas fa-list"></i> All Animes</a>
+                <a href="#" class="link"><i class="fas fa-plus"></i> Add Anime</a>
+              </div>
+            </li>
+            <li><a href="setting.html" class="link"><i class="fas fa-sliders-h"></i> Setting</a></li>
+            <li><a href="password.html" class="link"><i class="fas fa-lock"></i> Password</a></li>
+            <li><a href="logout.html" class="link"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+          </div>
+      </div>
+      <div class="container">
+        <div class="nav">
+          <button class='nav_btn'><i class="fas fa-bars"></i></button>
+          <a href="profile.html" class="profile">
+            <img src="https://i.ibb.co/6DzSr3z/profile2.jpg" alt="">
+          </a>
+        </div>
+        <div class="contente">
+          <!-- <h3>Movie Add</h3> -->
+          <div class="ifimdb">
+            <p>IMPORT MOVIES/VIDEOS FROM TMDB</p>
+            <form action="" method="post">
+              <input type="text" name="" value="" placeholder="Enter TMDB ID. Ex: 141052">
+              <button type="submit" name="button">Fetch</button>
+            </form>
+            <div class="tuto">
+              <div><a href="https://www.youtube.com/watch?v=DZrv95huYUk&ab_channel=SpaGreenCreative">Tutorial</a> | Get TMDb ID from here: <a href="https://www.themoviedb.org/movie/">TheMovieDB.org</a>.</div>
+            </div>
+          </div>
+          <form class="update_form" action="" method="post">
+            <div class="left side">
+              <div class="field">
+                <label for="cat">Category</label>
+                <select class="select cat" name="cat">
+                  <option selected disabled>Select Category</option>
+                  <option value="movie">Movie</option>
+                  <option value="tvshows">TVShows</option>
+                  <option value="anime">Anime</option>
+                </select>
+              </div>
+              <div class="field checkdiv">
+                <label for="check_tvshow" class="check">If This Project Is Already Exist! </label>
+                <input type="checkbox" name="check_tvshow" class="checkbox">
+              </div>
+              <div class="field" id="check">
+                <label for="movie">Movie</label>
+                <select class="select movie" name="movie">
+                  <option selected disabled>Select Movie</option>
+                  <option value="1">Movie 1</option>
+                  <option value="1">Movie 2</option>
+                  <option value="1">Movie 3</option>
+                </select>
+              </div>
+              <!-- <div class="field" id="check">
+                  <div class="rate">
+                    <label for="season">Season</label>
+                    <input type="text" name="season" style="width:50px">
+                  </div>
+                  <div class="rate">
+                    <label for="ep" style="margin-left:10px">Episodes</label>
+                    <input type="text" name="ep" style="width:50px">
+                  </div>
+              </div> -->
+              <div class="field" id="checked">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Entre Movie Title">
+              </div>
+              <div class="field" id="checked">
+                <label for="actor">Actors</label>
+                  <select class="multiple-select select actor" name="actor[]" multiple="multiple" id="test">
+                  <option value="1">Leonardo</option>
+                  <option value="1">Deep</option>
+                  <option value="1">Hunks</option>
+                </select>
+              </div>
+              <div class="field" id="checked">
+                <label for="director">Director</label>
+                <select class="select director" name="director">
+                  <option selected disabled>Select Director</option>
+                  <option value="1">Nolan</option>
+                  <option value="1">Scorsese</option>
+                  <option value="1">Tarantino</option>
+                </select>
+              </div>
+              <div class="field" id="checked">
+                <label for="date">Release Date</label>
+                <input type="date" name="date" placeholder="Entre The Movie Date">
+              </div>
+              <div class="field" id="checked">
+                <label for="country">Country</label>
+                <select class="select director" name="director">
+                  <option selected disabled>Select Country</option>
+                  <option value="1">USA</option>
+                  <option value="1">UK</option>
+                  <option value="1">Korea</option>
+                </select>
+              </div>
+              <div class="field" id="checked">
+                <label for="gendre">Gendre</label>
+                <select class="multiple-select select gendre" name="states[]" multiple="multiple">
+                  <option value="drama">Drama</option>
+                  <option value="actions">Actions</option>
+                  <option value="scific">Sci-Fic</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="runtime">Runtime</label>
+                <input type="text" name="runtime" placeholder="Entre The Movie Time By Minute">
+              </div>
+              <div class="field rating" id="checked">
+                  <div class="rate">
+                    <!-- <label for="rotten">Rotten Tomatoes</label> -->
+                    <img src="img/rt.jpg" alt="">
+                    <input type="text" name="rotten" placeholder="/100%">
+                  </div>
+                  <div class="rate">
+                    <!-- <label for="imdb" style="margin-left:10px;">IMDB</label> -->
+                    <img src="img/imdb.png" alt="">
+                    <input type="text" name="imdb" placeholder="/10">
+                  </div>
+              </div>
+              <div class="field" id="checked">
+                <label for="trailer">Trailer Link</label>
+                <input type="text" name="trailer" placeholder="Entre The Movie Youtube Link">
+              </div>
+
+              <div class="field">
+                <label for="">Status</label>
+                <select class="select statut" name="serie">
+                  <option selected disabled>Select Statut</option>
+                  <option value="1">Private</option>
+                  <option value="1">Public</option>
+                  <option value="1">Subscriber</option>
+                </select>
+              </div>
+            </div>
+            <div class="right side">
+              <div class="field thum">
+                <label for="">Thumbnail</label>
+                <div class="thumbnail">
+                  <img src="img/phone-bad.jpg" alt="" name="thumbnail">
+                </div>
+                <div class="img_btn">
+                  <button type="button" data-id="tlink" ><i class="fas fa-link"></i> Link</button>
+                  <button type="button" data-id="tfile" ><i class="fas fa-file"></i> File</button>
+                </div>
+                <div class="img_file">
+                  <input type="file" name="img_link_file" class="active" id="tfile">
+                  <input type="text" name="img_link_text" class="" id="tlink" placeholder="Entre The Image Link..">
+                </div>
+              </div>
+              <div class="field post">
+                <label for="">Poster</label>
+                <div class="poster">
+                  <img src="img/larg-bad.jpg" alt="" name="poster">
+                </div>
+                <div class="img_btn">
+                  <button type="button" data-id="plink" ><i class="fas fa-link"></i> Link</button>
+                  <button type="button" data-id="pfile" ><i class="fas fa-file"></i> File</button>
+                </div>
+                <div class="img_file">
+                  <input type="file" name="img_link_file" class="active" id="pfile">
+                  <input type="text" name="img_link_text" id="plink" placeholder="Entre The Image Link..">
+                </div>
+              </div>
+              <div class="field textarea" id="checked">
+                <label for="">Discription</label>
+                <textarea name="name" rows="3" id="story" placeholder="Entre The Story"></textarea>
+              </div>
+              <button type="submit" name="button" class="sub">Add Movie</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    </script>
+</body>
+</html>
